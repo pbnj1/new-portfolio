@@ -283,3 +283,59 @@ section.landing .profile-area .inner-circle {
   border-radius: 50%;
   overflow: hidden;
 } 
+
+
+/*              ABOUT SECTION                    */
+
+/* makes the about section have a light grey background */
+section.about{
+  background-color: var(--color-light);
+}
+
+/* takes the container that holds the about picture and makes a grid so the picture is on the left and the words are on the right */
+section.about .container {
+  display: grid;
+  grid-template-columns: 26rem auto;
+  gap: 5rem;
+}
+
+/* gives a littlbe bit of space underneath each paragraph portion in the about section */
+section.about p{
+  margin-bottom: 1rem;
+}
+
+secion.about .container .read-more-content{
+  display:none;
+}
+
+section.about .container .read-more {
+  display: block;
+  margin: 1rem 0 2rem;
+}
+
+section.about .container .read-more {
+  display: block;
+  margin: 1rem 0 2rem;
+  color: var(--color-primary);
+  color: pointer;
+}
+/*        ADDS AN ON HOVER COMMAND OVER THE READ-MORE CLASS TO UNDERLINE THE TEXT */
+.read-more:hover {
+  text-decoration: underline;
+}
+
+
+/*                    START OF SKILLS SECTION                    */
+section.skills .container{
+  width: 50%;
+}
+
+section.skills .skill .head{
+  background: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-white);
+  padding: 1.6rem;
+  cursor:pointer;
+}
